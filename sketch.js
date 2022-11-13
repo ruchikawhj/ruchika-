@@ -153,19 +153,15 @@ if (zombieGroup.isTouching(player)){
 
 if (zombieGroup.isTouching(bulletGroup)){
   for (var i=0;i<zombieGroup.length;i++ ){
-   
+    
       zombieGroup[i].addImage(zombieDie);
       zombieGroup[i].velocityX=0;
-      setTimeout(() => {
-       
-        zombieGroup[i].destroy()
-      }, 2000);
-     
+      zombieGroup[i].lifetime=20;
       bulletGroup.destroyEach()
       nz+=1;
       mZ-=1;
       
-  
+   
   }
 }
 
