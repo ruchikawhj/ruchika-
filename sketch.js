@@ -153,7 +153,7 @@ if (zombieGroup.isTouching(player)){
 
 if (zombieGroup.isTouching(bulletGroup)){
   for (var i=0;i<zombieGroup.length;i++ ){
-    if (zombieGroup[i].isTouching(bulletGroup)){
+   
       zombieGroup[i].addImage(zombieDie);
       zombieGroup[i].velocityX=0;
       setTimeout(() => {
@@ -165,7 +165,7 @@ if (zombieGroup.isTouching(bulletGroup)){
       nz+=1;
       mZ-=1;
       
-    }
+  
   }
 }
 
